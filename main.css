@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  --hero-height: 85vh;
+  --main-bg-color: #eee;
+  --white-color: #fff;
+  --lora-font-style: "Lora", serif;
+  --regular-font-size: 18px;
+}
+
+/* Universal common properties */
+* {
+  font-family: var(--lora-font-style);
+  font-size: var(--regular-font-size);
+}
+
+/* Button Common Styles */
+.btn {
+  outline: none;
+  border: none;
+  color: var(--white-color);
+  padding: 10px;
+}
+
+/* Common Flex-Column Properties */
+.flex-column-properties {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Common flex-row properties */
+.flex-row-properties {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Hero Section */
+.hero {
+  height: var(--hero-height);
+  background-color: var(--main-bg-color);
+  background: url(./images/hero1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-link,
+.navbar-brand,
+.nav-link:hover {
+  color: var(--white-color);
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.hero-main__container {
+  gap: 7em;
+}
+
+.hero-motto__container {
+  width: 30%;
+  margin: 100px 0;
+}
+
+.hero-motto__container .hero-motto {
+  color: var(--white-color);
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.hero-more__info {
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: solid 1px var(--white-color);
+}
+
+.read-more__btn,
+.know-more_btn {
+  background-color: #000;
+  border-radius: 0;
+  width: 120px;
+}
+
+.lorem-section .lorem-text {
+  color: var(--white-color);
+}
+
+.hero-slider__bar {
+  color: var(--white-color);
+  font-style: italic;
+}
+
+.hero__slider-btn {
+  background-color: transparent;
+}
+
+.testimonials-wrapper {
+  display: grid;
+  grid-template-columns: 35% 60%;
+  justify-content: space-around;
+}
+
+.carousel,
+.carousel-item {
+  height: 400px;
+}
+
+.about-section_wrapper {
+  gap: 20px;
+  align-items: center;
+}
+
+.about {
+  width: 60%;
+  text-align: center;
+  line-height: 2;
+}
+
+.grid-image:hover {
+  transform: scale(0.98);
+  cursor: pointer;
+}
+
+.contact-wrapper {
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: var(--main-bg-color);
+  text-align: center;
+}
+
+.contact-info {
+  margin: 10px 0;
+}
+
+.contact-link {
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        margin: 0;
+    }
+  .hero {
+    height: 100vh;
+  }
+  .hero-motto__container {
+    width: 90%;
+    margin: 0;
+  }
+  .about {
+    width: 90%;
+  }
+  .testimonials-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel,
+.carousel-item {
+    height: fit-content;
+}
+}
