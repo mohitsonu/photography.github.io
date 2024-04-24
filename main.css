@@ -125,6 +125,12 @@
   cursor: pointer;
 }
 
+
+.longimg {
+  margin: 1%;
+width:98%;
+}
+
 .contact-wrapper {
   padding: 30px;
   box-sizing: border-box;
