@@ -27,6 +27,11 @@ heroSliderPreviousBgButton.onclick = (e) => {
     hero.style.backgroundSize = 'cover';
 }
 
+
+
+
+
+
 // Handler to move the slider images forward
 heroSliderNextBgButton.onclick = (e) => {
     let getCurrentBgPosition = (+currentBgPositionInHeroSlider.innerText); //0-indexed
@@ -52,3 +57,36 @@ window.onscroll = (e) => {
         navigationBar.style.backgroundColor = "#424242";
     }
 }
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".slider1");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+  
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slide1");
+    const totalSlides = slides.length;
+    const slideWidth = slides[0].clientWidth;
+  
+    function showSlides() {
+      slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+    }
+  
+    showSlides();
+  
+    prevBtn.addEventListener("click", function () {
+      slideIndex = (slideIndex === 0) ? totalSlides - 1 : slideIndex - 1;
+      showSlides();
+    });
+  
+    nextBtn.addEventListener("click", function () {
+      slideIndex = (slideIndex === totalSlides - 1) ? 0 : slideIndex + 1;
+      showSlides();
+    });
+  });
+  

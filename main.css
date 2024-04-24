@@ -150,6 +150,18 @@ width:98%;
   text-decoration: underline;
 }
 
+.photographer{
+  height: 300px;
+  width: 200px;
+}
+
+
+.quote {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+
 @media screen and (max-width: 1200px) {
     .navbar {
         margin: 0;
@@ -173,3 +185,50 @@ width:98%;
     height: fit-content;
 }
 }
+
+
+
+
+
+
+.slider-container1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider1 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide1 {
+  flex: 0 0 33.33%; /* Display 3 images in a row */
+}
+
+#one {
+  width: 100%;
+  height: auto;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-controls button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
