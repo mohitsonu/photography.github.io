@@ -244,7 +244,7 @@
 }
 
 .author-intro mark{
-  font-size: 50px;
+  font-size: 40px;
   background-color: #a5d6a7;
   font-family: sans-serif;
   line-height: 1;
@@ -271,5 +271,11 @@
   }
   .image-shadow {
     display: none;
+  }
+  .author-intro mark{
+    font-size: 25px;
+    background-color: #a5d6a7;
+    font-family: sans-serif;
+    line-height: 1;
   }
 }
