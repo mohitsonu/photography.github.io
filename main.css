@@ -201,7 +201,8 @@
 
 .slider {
   display: inline-flex;
-  animation: 10s slide-loop infinite linear;
+  animation: 30s slide-loop infinite linear;
+  -webkit-animation: 30s slide-loop infinite linear;
 }
 
 .slider-image {
